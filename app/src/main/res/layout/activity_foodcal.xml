@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.janhvik.dietapp.foodcal"
+    android:background="@drawable/coo">
+
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text=""
+        android:textSize="40sp"
+        android:textColor="#e4260e"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total Calories"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/calories"
+        android:layout_toRightOf="@+id/calthis"
+        android:layout_toEndOf="@+id/calthis"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:background="#1732e7"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/etquantity"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="30sp"
+        android:inputType="textPersonName"
+        android:hint="Quantity"
+        android:textColor="#ff0000"
+        android:textColorHint="#f2f"
+        android:layout_above="@+id/calthis"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/Food_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:textSize="55sp"
+        android:textColor="#e11414"
+        android:text="Food Calories"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to list"
+        android:layout_below="@+id/suggestion"
+        android:layout_alignRight="@+id/etquantity"
+        android:layout_alignEnd="@+id/etquantity"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:background="#1732e7"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/calthis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories for this food"
+        android:layout_above="@+id/suggestion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:background="#1732e7"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d90921"
+        android:textSize="15sp"
+        android:text="**To Calculate calories for food items you have eaten click on: ADD TO LIST and then calculate TOTAL CALORIES"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/calculate"
+        android:layout_alignLeft="@+id/calories"
+        android:layout_alignStart="@+id/calories"
+        android:layout_alignRight="@+id/Food_cal"
+        android:layout_alignEnd="@+id/Food_cal" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/calthis"
+        android:layout_toEndOf="@+id/calthis" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Item"
+        android:textColor="#020e51"
+        android:textSize="25sp"
+        android:layout_above="@+id/etquantity"
+        android:layout_alignRight="@+id/add"
+        android:layout_alignEnd="@+id/add"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="*Measure considered accordingly"
+        android:layout_alignBaseline="@+id/etquantity"
+        android:layout_alignBottom="@+id/etquantity"
+        android:layout_alignLeft="@+id/calculate"
+        android:layout_alignStart="@+id/calculate"
+        android:textColor="#092cd9"/>
+
+
+</RelativeLayout>
